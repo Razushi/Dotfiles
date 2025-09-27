@@ -1,0 +1,10 @@
+*
+!.gitignore
+!.config/
+!.config/waybar/**
+!.config/hypr/**
+!.config/fish/**
+!.gitconfig
+!.ssh/
+!.ssh/config
+.ssh/id_*
