@@ -5,12 +5,3 @@
 !/.ssh/
 !/.ssh/config
 /.ssh/id_*
-
-!/.config/waybar/
-!/.config/waybar/**
-
-!/.config/hypr/
-!/.config/hypr/**
-
-!/.config/fish/
-!/.config/fish/**
