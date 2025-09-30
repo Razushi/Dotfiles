@@ -1,0 +1,171 @@
+[1mdiff --git a/lazy-lock.json b/lazy-lock.json[m
+[1mindex dc8c132..454bba5 100644[m
+[1m--- a/lazy-lock.json[m
+[1m+++ b/lazy-lock.json[m
+[36m@@ -1,30 +1,26 @@[m
+ {[m
+[31m-  "LuaSnip": { "branch": "master", "commit": "33b06d72d220aa56a7ce80a0dd6f06c70cd82b9d" },[m
+[31m-  "cmp-nvim-lsp": { "branch": "main", "commit": "99290b3ec1322070bcfb9e846450a46f6efa50f0" },[m
+[31m-  "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },[m
+[31m-  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },[m
+[31m-  "conform.nvim": { "branch": "master", "commit": "9180320205d250429f0f80e073326c674e2a7149" },[m
+[31m-  "dashboard-nvim": { "branch": "master", "commit": "ae309606940d26d8c9df8b048a6e136b6bbec478" },[m
+[31m-  "fidget.nvim": { "branch": "main", "commit": "9238947645ce17d96f30842e61ba81147185b657" },[m
+[31m-  "gitsigns.nvim": { "branch": "main", "commit": "5f808b5e4fef30bd8aca1b803b4e555da07fc412" },[m
+[31m-  "lazy.nvim": { "branch": "main", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },[m
+[31m-  "lazydev.nvim": { "branch": "main", "commit": "8620f82ee3f59ff2187647167b6b47387a13a018" },[m
+[31m-  "luvit-meta": { "branch": "main", "commit": "57d464c4acb5c2e66bd4145060f5dc9e96a7bbb7" },[m
+[31m-  "mini.nvim": { "branch": "main", "commit": "2011aff270bcd3e1f3ad088253ace2d574967bed" },[m
+[31m-  "neo-tree.nvim": { "branch": "main", "commit": "a77af2e764c5ed4038d27d1c463fa49cd4794e07" },[m
+[31m-  "no-neck-pain.nvim": { "branch": "main", "commit": "2a786bf7130cce20449885fb799f3c7f4ce93595" },[m
+[32m+[m[32m  "blink.cmp": { "branch": "main", "commit": "1cc3b1a908fbcfd15451c4772759549724f38524" },[m
+[32m+[m[32m  "conform.nvim": { "branch": "master", "commit": "363243c03102a531a8203311d4f2ae704c620d9b" },[m
+[32m+[m[32m  "dashboard-nvim": { "branch": "master", "commit": "000448d837f6e7a47f8f342f29526c4d7e49e9ce" },[m
+[32m+[m[32m  "fidget.nvim": { "branch": "main", "commit": "a0abbf18084b77d28bc70e24752e4f4fd54aea17" },[m
+[32m+[m[32m  "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },[m
+[32m+[m[32m  "gitsigns.nvim": { "branch": "main", "commit": "9b36d497495436c135659902054ee637e0ba6021" },[m
+[32m+[m[32m  "lazy.nvim": { "branch": "main", "commit": "7527af40ddd4a93a02911be570b32609b9d4ea53" },[m
+[32m+[m[32m  "lazydev.nvim": { "branch": "main", "commit": "a1b78b2ac6f978c72e76ea90ae92a94edf380cfc" },[m
+[32m+[m[32m  "luvit-meta": { "branch": "main", "commit": "1df30b60b1b4aecfebc785aa98943db6c6989716" },[m
+[32m+[m[32m  "mini.nvim": { "branch": "main", "commit": "509e086e13a1aa7105e427bb1b122a7174716b77" },[m
+[32m+[m[32m  "neo-tree.nvim": { "branch": "main", "commit": "5d172e8315444dbc32867d1c7b04d8e7e68ec4e1" },[m
+[32m+[m[32m  "no-neck-pain.nvim": { "branch": "main", "commit": "860462dd8b3d36861a81724a7b473db279f673f2" },[m
+   "nui.nvim": { "branch": "main", "commit": "53e907ffe5eedebdca1cd503b00aa8692068ca46" },[m
+[31m-  "nvim-cmp": { "branch": "main", "commit": "b555203ce4bd7ff6192e759af3362f9d217e8c89" },[m
+[31m-  "nvim-lspconfig": { "branch": "master", "commit": "ff2b85abaa810f6611233dbe6d31c07510ebf43d" },[m
+[31m-  "nvim-treesitter": { "branch": "master", "commit": "ac6a72a6f83218216948e898362f09029b8035dc" },[m
+[31m-  "nvim-web-devicons": { "branch": "master", "commit": "c1a86a2c386c55efc02fa2ec2c3a914af653d954" },[m
+[31m-  "obsidian.nvim": { "branch": "main", "commit": "ae1f76a75c7ce36866e1d9342a8f6f5b9c2caf9b" },[m
+[31m-  "onedarkpro.nvim": { "branch": "main", "commit": "e9b44b946bb7760f8125e3bfc648deebb9328e52" },[m
+[31m-  "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },[m
+[32m+[m[32m  "nvim-lspconfig": { "branch": "master", "commit": "f98fa715acc975c2dd5fb5ba7ceddeb1cc725ad2" },[m
+[32m+[m[32m  "nvim-treesitter": { "branch": "master", "commit": "73b68cb943cd6718bdee318a70874620070255d4" },[m
+[32m+[m[32m  "nvim-web-devicons": { "branch": "master", "commit": "402377242b04be3f4f0f3720bd952df86e946c30" },[m
+[32m+[m[32m  "onedarkpro.nvim": { "branch": "main", "commit": "44775f8206ee43b692e7f3dc894ddc47996ee523" },[m
+[32m+[m[32m  "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },[m
+   "telescope-fzf-native.nvim": { "branch": "main", "commit": "dae2eac9d91464448b584c7949a31df8faefec56" },[m
+   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },[m
+[31m-  "telescope-undo.nvim": { "branch": "main", "commit": "2971cc9f193ec09e0c5de3563f99cbea16b63f10" },[m
+[32m+[m[32m  "telescope-undo.nvim": { "branch": "main", "commit": "928d0c2dc9606e01e2cc547196f48d2eaecf58e5" },[m
+   "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },[m
+[31m-  "todo-comments.nvim": { "branch": "main", "commit": "ae0a2afb47cf7395dc400e5dc4e05274bf4fb9e0" },[m
+[31m-  "which-key.nvim": { "branch": "main", "commit": "8ab96b38a2530eacba5be717f52e04601eb59326" }[m
+[32m+[m[32m  "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },[m
+[32m+[m[32m  "which-key.nvim": { "branch": "main", "commit": "0e76a87ac51772569aec678dc74baa8e2a86100c" }[m
+ }[m
+[1mdiff --git a/lua/lazy-plugins.lua b/lua/lazy-plugins.lua[m
+[1mindex 9b07319..b0d98a0 100644[m
+[1m--- a/lua/lazy-plugins.lua[m
+[1m+++ b/lua/lazy-plugins.lua[m
+[36m@@ -32,13 +32,14 @@[m [mrequire('lazy').setup({[m
+   require 'plugins.conform-autoformat',[m
+   require 'plugins.lazydev-lsp',[m
+   require 'plugins.mini',[m
+[31m-  require 'plugins.nvim-cmp',[m
+[32m+[m[32m  require 'plugins.blink-cmp',[m
+[32m+[m[32m  -- require 'plugins.nvim-cmp',[m
+   require 'plugins.telescope',[m
+   require 'plugins.todo-comments',[m
+   require 'plugins.treesitter',[m
+   require 'plugins.which-key',[m
+   require 'plugins.dashboard-nvim',[m
+[31m-  require 'plugins.obsidian-nvim',[m
+[32m+[m[32m  -- require 'plugins.obsidian-nvim',[m
+   require 'plugins.onedark',[m
+   require 'plugins.telescope-undo',[m
+   require 'plugins.no-neck-pain',[m
+[1mdiff --git a/lua/plugins/dashboard-nvim.lua b/lua/plugins/dashboard-nvim.lua[m
+[1mindex e8bf508..279c085 100644[m
+[1m--- a/lua/plugins/dashboard-nvim.lua[m
+[1m+++ b/lua/plugins/dashboard-nvim.lua[m
+[36m@@ -1,6 +1,7 @@[m
+ return {[m
+   'nvimdev/dashboard-nvim',[m
+   event = 'VimEnter',[m
+[32m+[m[32m  lazy = false,[m
+   config = function ()[m
+     require('dashboard').setup {[m
+     -- config[m
+[1mdiff --git a/lua/plugins/lazydev-lsp.lua b/lua/plugins/lazydev-lsp.lua[m
+[1mindex ea3de09..f7b14d4 100644[m
+[1m--- a/lua/plugins/lazydev-lsp.lua[m
+[1m+++ b/lua/plugins/lazydev-lsp.lua[m
+[36m@@ -21,11 +21,11 @@[m [mreturn {[m
+       -- Useful status updates for LSP.[m
+       -- `opts = {}` is the same as calling `require('fidget').setup({})`[m
+       { 'j-hui/fidget.nvim', opts = {} },[m
+[31m-[m
+[31m-      -- Allows extra capabilities provided by nvim-cmp[m
+[31m-      'hrsh7th/cmp-nvim-lsp',[m
+[32m+[m[32m      { 'saghen/blink.cmp' },[m
+     },[m
+     config = function()[m
+[32m+[m[32m      -- Call blink setup for each LSP directly[m
+[32m+[m[32m      local capabilities = require('blink.cmp').get_lsp_capabilities()[m
+       local lspconfig = require('lspconfig')[m
+       lspconfig.lua_ls.setup {[m
+         on_attach = on_attach,[m
+[36m@@ -45,15 +45,25 @@[m [mreturn {[m
+           },[m
+         },[m
+       }[m
+[31m-      lspconfig.marksman.setup {[m
+[32m+[m[32m      lspconfig.markdown_oxide.setup {[m
+         on_attach = on_attach,[m
+         capabilities = capabilities,[m
+[32m+[m[32m        {[m
+[32m+[m[32m          workspace = {[m
+[32m+[m[32m            didChangeWatchedFiles = {[m
+[32m+[m[32m              dynamicRegistration = true,[m
+[32m+[m[32m            }[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+       }[m
+       -- English grammar LSP[m
+       lspconfig.harper_ls.setup {[m
+         settings = {[m
+           ["harper-ls"] = {[m
+[31m-            userDictPath = "~/dict.txt"[m
+[32m+[m[32m            userDictPath = "~/dict.txt",[m
+[32m+[m[32m            codeActions = {[m
+[32m+[m[32m              forceStable = true[m
+[32m+[m[32m            }[m
+           }[m
+         },[m
+         filetypes = { "markdown" }[m
+[36m@@ -154,13 +164,6 @@[m [mreturn {[m
+           end[m
+         end,[m
+       })[m
+[31m-[m
+[31m-      -- LSP servers and clients are able to communicate to each other what features they support.[m
+[31m-      --  By default, Neovim doesn't support everything that is in the LSP specification.[m
+[31m-      --  When you add nvim-cmp, luasnip, etc. Neovim now has *more* capabilities.[m
+[31m-      --  So, we create new capabilities with nvim cmp, and then broadcast that to the servers.[m
+[31m-      local capabilities = vim.lsp.protocol.make_client_capabilities()[m
+[31m-      capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())[m
+     end,[m
+   },[m
+ }[m
+[1mdiff --git a/lua/plugins/obsidian-nvim.lua b/lua/plugins/obsidian-nvim.lua[m
+[1mindex c15b9f4..54a21b9 100644[m
+[1m--- a/lua/plugins/obsidian-nvim.lua[m
+[1m+++ b/lua/plugins/obsidian-nvim.lua[m
+[36m@@ -11,7 +11,7 @@[m [mreturn {[m
+     workspaces = {[m
+       {[m
+         name = "main",[m
+[31m-        path = "~/Documents/Scythic-Obsidian",[m
+[32m+[m[32m        path = "~/Documents/Scythic-obsidian/",[m
+       },[m
+     },[m
+   },[m
+[36m@@ -22,7 +22,7 @@[m [mreturn {[m
+         workspaces = {[m
+           {[m
+             name = "main",[m
+[31m-            path = "~/Documents/Scythic-Obsidian/",[m
+[32m+[m[32m            path = "~/Documents/Scythic-obsidian/",[m
+           }[m
+         },[m
+ [m
