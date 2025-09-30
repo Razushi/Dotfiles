@@ -5,3 +5,7 @@
 !/.ssh/
 !/.ssh/config
 /.ssh/id_*
+
+!/kdeglobals
+!/.gtkrc-2.0
+
