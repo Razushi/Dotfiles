@@ -19,7 +19,7 @@
   "modules-right": [
     "tray",
     "pulseaudio",
-    "power-profiles-daemon",
+    "battery",
     "network",
     "clock",
     "custom/notification",
@@ -100,6 +100,23 @@
     "tooltip-format": "{essid} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 50,
+      "critical": 20
+      },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "battery#bat2": {
+    "bat": "BAT2"
   },
 
   "pulseaudio": {
