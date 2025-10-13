@@ -92,17 +92,30 @@ tooltip label {
 #workspaces button.urgent { color: rgba(238, 46, 36, 1); }
 
 /* Spacing */
-#mode, #clock, #battery { margin: 3px; }
+#mode, #clock { margin: 3px; }
 #pulseaudio { margin-left: 24px; margin-right: 24px; }
 #mode { border-bottom: 3px solid white; }
 #clock { color: @fg_text; margin-left: 24px; margin-right: 24px; }
 #network { margin-left: 24px; margin-right: 24px; }
 
 /* Battery */
-#battery { color: black; }
-#battery.charging { color: black; background-color: transparent; }
-#battery.warning:not(.charging) {
-  background: #f53c3c;
+#battery {
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 0 6px;
+  color: @fg_text;
+  transition: none;
+  border-radius: 3px;
+  font-weight: 500;
+  border: 1px solid transparent; /* keeps the layout from shifting */
+}
+#battery.charging {
+  color: @fg_text;
+  background-color: transparent;
+}
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) {
+  background: @accent;
   color: white;
   animation: blink 0.5s steps(12) infinite alternate;
 }
