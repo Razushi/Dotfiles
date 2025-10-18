@@ -1,0 +1,31 @@
+theme = "kanagawa"
+
+[editor]
+end-of-line-diagnostics = "hint"
+auto-pairs = false
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+A-w = ":toggle-option soft-wrap.enable"
+A-h = ":toggle-option lsp.display-inlay-hints"
+A-r = "@a<backspace><S-T>esting<space>a<space>macro.<ret><S-A>nother<space>line<space>another<space>test.<ret><S-T>here<space>should<space>be<space>a<backspace>numberas<space>on<space>e<backspace><backspace><backspace><backspace><backspace><backspace><backspace>s<space>on<space>each<space>line<space>except<space>this<space>one.<ret><S-H>ere<space>is<space>one<space>more<space>line.<esc><up><up><up>xx<down><up><up>vxx<down><down><esc><esc><up><up><up><S-C><down><down><up><up><esc><down><up>;,<down><down><up><S-C><up><up><S-C><S-C><S-A><space>123<esc>,<up><S-A><esc>bx<esc>;bddu<left>d<left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><left><up><up>gh"
+
+# Disable diagnostics while in insert. Pt1
+i = [":set end-of-line-diagnostics disable", "insert_mode"]
+I = [":set end-of-line-diagnostics disable", "insert_at_line_start"]
+a = [":set end-of-line-diagnostics disable", "append_mode"]
+A = [":set end-of-line-diagnostics disable", "insert_at_line_end"]
+o = [":set end-of-line-diagnostics disable", "open_below"]
+O = [":set end-of-line-diagnostics disable", "open_above"]
+
+[keys.insert]
+
+# Disable diagnostics while in insert. Pt2
+"esc"   = [":set end-of-line-diagnostics hint", "normal_mode"]
