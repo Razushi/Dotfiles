@@ -1,0 +1,117 @@
+@define-color foreground #{{colors.on_surface.default.hex_stripped}};
+@define-color background #{{colors.background.default.hex_stripped}}aa;
+@define-color color1 #{{colors.primary.default.hex_stripped}}ee;
+@define-color border #{{colors.primary.default.hex_stripped}}ee;
+
+scrollbar {
+  opacity: 0;
+}
+
+.box-wrapper {
+  /*  NEEDS TO BE TRANSPARENT CUZ OF HYPRLAND BUG */
+  background: alpha(@background, 0.99);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.box-wrapper-big {
+  border-radius: 10px;
+  border: 2px solid @border;
+  /*  NEEDS TO BE TRANSPARENT CUZ OF HYPRLAND BUG */
+  background: alpha(@background, 0.99);
+}
+
+.preview-box {
+}
+
+.box {
+}
+
+.search-container {
+  background: @background;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+.input placeholder {
+  opacity: 0.5;
+}
+
+.input {
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: none;
+  outline: none;
+  padding-left: 10px;
+  color: @foreground;
+}
+
+.input:focus,
+.input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.content-container {
+}
+
+.placeholder {
+}
+
+.scroll {
+}
+
+.list {
+  background: @background;
+}
+
+child,
+child > * {
+  padding: 0;
+  margin: 0;
+}
+
+.item-box {
+  padding: 5px;
+  margin: 10px;
+  height: 20px;
+}
+
+.item-text-box {
+  all: unset;
+}
+
+.item-text {
+  font-size: 12px;
+  color: @foreground;
+}
+
+.item-subtext {
+  font-size: 11px;
+  opacity: 0.8;
+  color: @foreground;
+}
+
+.item-image {
+    height: 25px;
+    width: 25px;
+    margin-right: 7px;
+}
+
+.preview {
+}
+
+.calc .item-text {
+  font-size: 24px;
+  color: @foreground;
+}
+
+.calc .item-subtext {
+}
+
+.symbols .item-image {
+  font-size: 18px;
+  color: @foreground;
+}

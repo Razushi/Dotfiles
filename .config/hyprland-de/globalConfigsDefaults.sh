@@ -1,0 +1,3 @@
+#!/bin/bash
+
+HLDE_MATUGEN_CONTRAST=0.0
