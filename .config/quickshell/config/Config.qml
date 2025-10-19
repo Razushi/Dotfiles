@@ -79,6 +79,8 @@ Singleton {
       return "MM/dd/yyyy hh:mm AP";
     if (settings.misc.dateFormat == 4)
       return "ddd, d MMM yyyy hh:mm AP";
+    if (settings.misc.dateFormat == 5)
+      return "HH:mm";
   }
 
   function secondsToRelative(sec) {
@@ -258,10 +260,16 @@ Singleton {
         property string moduleCenter: "title"
 
         property JsonObject workspaces: JsonObject {
-          property int shown: 10
+          property int shown: 5
           property real activeIndicatorWidthMultiplier: 2
           property int style: 3
           property bool onlyOnCurrent: true
+          property list<var> bases: [
+            ({ name: "DP-2", chunk: 0 }),
+            ({ name: "HDMI-A-2", chunk: 1 }),
+            ({ name: "eDP-1", chunk: 0 })
+          ]
+          property int defaultBase: 1
         }
 
         property JsonObject battery: JsonObject {
@@ -270,7 +278,7 @@ Singleton {
         }
       }
       property JsonObject fonts: JsonObject {
-        property int basePointSize: 10
+        property int basePointSize: 16
         property bool useNativeRendering: false
       }
       property JsonObject osd: JsonObject {

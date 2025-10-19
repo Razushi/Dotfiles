@@ -56,7 +56,7 @@ CategoryBlueprint {
             ST.ChoiceBoxValue {
                 label: "Date format"
                 value: C.Config.settings.misc.dateFormat
-                values: ["Standard", "Leading", "12-hour", "American", "Full English", "Polish"]
+                values: ["Standard", "Leading", "12-hour", "American", "Full English", "Time Only"]
                 onMoved: C.Config.settings.misc.dateFormat = Math.round(value)
             }
 

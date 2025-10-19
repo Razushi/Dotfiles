@@ -260,7 +260,7 @@ CategoryBlueprint {
             ST.ChoiceBoxValue {
                 label: "Indicator style"
                 value: C.Config.settings.bar.workspaces.style
-                values: ["Round", "Numbers", "Roman"]
+                values: ["Round", "Numbers", "Roman", "Chinese"]
                 onMoved: C.Config.settings.bar.workspaces.style = Math.round(value)
             }
 
