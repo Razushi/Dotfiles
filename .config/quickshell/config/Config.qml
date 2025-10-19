@@ -261,7 +261,7 @@ Singleton {
           property int shown: 10
           property real activeIndicatorWidthMultiplier: 2
           property int style: 3
-          property bool onlyOnCurrent: false
+          property bool onlyOnCurrent: true
         }
 
         property JsonObject battery: JsonObject {
