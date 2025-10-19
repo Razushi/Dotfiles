@@ -18,6 +18,23 @@ OffsetMouseWrapper {
   property int shownWorkspaces: C.Config.settings.bar.workspaces.shown
   property int baseWorkspace: Math.floor((activeWorkspace - 1) / shownWorkspaces) * shownWorkspaces + 1
 
+  function toChineseNumeral(index) {
+    const digits = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"];
+    if (index <= 0)
+      return digits[0];
+    if (index <= 10)
+      return index == 10 ? "十" : digits[index];
+    if (index < 20)
+      return "十" + digits[index % 10];
+    if (index < 100) {
+      const tens = Math.floor(index / 10);
+      const ones = index % 10;
+      const tensPart = tens == 1 ? "十" : digits[tens] + "十";
+      return ones == 0 ? tensPart : tensPart + digits[ones];
+    }
+    return "" + index;
+  }
+
   // trackpads
   property int scrollAccumulator: 0
 
@@ -109,14 +126,14 @@ OffsetMouseWrapper {
           CW.StyledText {
             id: text
             visible: C.Config.settings.bar.workspaces.style != 0
-            text: C.Config.settings.bar.workspaces.style == 1 ? "" + modelData.index : C.Config.romanize(modelData.index)
+            text: C.Config.settings.bar.workspaces.style == 1 ? "" + modelData.index : (C.Config.settings.bar.workspaces.style == 2 ? C.Config.romanize(modelData.index) : (C.Config.settings.bar.workspaces.style == 3 ? toChineseNumeral(modelData.index) : "" + modelData.index))
             anchors {
               top: parent.top
               bottom: parent.bottom
             }
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: C.Config.settings.bar.workspaces.style == 2 ? C.Config.fontSize.small : C.Config.fontSize.normal
+            font.pointSize: (C.Config.settings.bar.workspaces.style == 2 || C.Config.settings.bar.workspaces.style == 3) ? C.Config.fontSize.small : C.Config.fontSize.normal
             color: (delegate.modelData.workspace ? colorForWorkspace(delegate.modelData.workspace) : C.Config.theme.surface_container_highest)
           
             Behavior on color {
