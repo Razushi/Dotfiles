@@ -16,8 +16,6 @@ WrapperItem {
   property bool powerOpen: false
   property bool updatesOpen: false
 
-  property bool idleInhibitEnabled: false
-
   implicitWidth: 360 // notifs are 360
 
   Item {
@@ -48,11 +46,8 @@ WrapperItem {
         UpperButton {
           icon: "visibility"
           description: "Idle Inhibit"
-          active: idleInhibitEnabled
-          onToggled: () => {
-            idleInhibitEnabled = !idleInhibitEnabled
-            S.SystemState.setHypridleStatus(!idleInhibitEnabled);
-          }
+          active: S.SystemState.idleInhibitEnabled
+          onToggled: () => S.SystemState.toggleIdleInhibit()
         }
 
         UpperButton {

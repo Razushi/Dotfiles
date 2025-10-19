@@ -44,14 +44,12 @@ Singleton {
   }
 
   function formatDateTime(dateTime) {
-    if (settings.misc.dateFormat == 5 /* vaxry */)
-      return Qt.formatDateTime(dateTime, "d") + " " + romanize(parseInt(Qt.formatDateTime(dateTime, "M"))) + " " + Qt.formatDateTime(dateTime, "yyyy hh:mm");
     return Qt.formatDateTime(dateTime, getConfigDateFormat());
   }
 
   function formatDateTimeSplit(dateTime) {
-    if (settings.misc.dateFormat == 5 /* vaxry */)
-      return [Qt.formatDateTime(dateTime, "d") + " " + romanize(parseInt(Qt.formatDateTime(dateTime, "M"))) + " " + Qt.formatDateTime(dateTime, "yyyy"), Qt.formatDateTime(dateTime, "hh:mm:ss")];
+    if (settings.misc.dateFormat == 5)
+      return ["", Qt.formatDateTime(dateTime, "HH:mm:ss")];
     return [Qt.formatDateTime(dateTime, getSplitConfigDateFormat()[0]), Qt.formatDateTime(dateTime, getSplitConfigDateFormat()[1])];
   }
 
@@ -66,6 +64,8 @@ Singleton {
       return ["MM/dd/yyyy", "hh:mm:ss AP"];
     if (settings.misc.dateFormat == 4)
       return ["ddd, d MMM yyyy", "hh:mm:ss AP"];
+    if (settings.misc.dateFormat == 5)
+      return ["", "HH:mm:ss"];
   }
 
   function getConfigDateFormat() {
@@ -256,7 +256,7 @@ Singleton {
         property bool weatherTempInCelcius: true
 
         property string modulesLeft: "workspaces, mpris"
-        property string modulesRight: "clock, battery, weather"
+        property string modulesRight: "clock, idle"
         property string moduleCenter: "title"
 
         property JsonObject workspaces: JsonObject {
@@ -265,9 +265,9 @@ Singleton {
           property int style: 3
           property bool onlyOnCurrent: true
           property list<var> bases: [
-            ({ name: "DP-2", chunk: 0 }),
-            ({ name: "HDMI-A-2", chunk: 1 }),
-            ({ name: "eDP-1", chunk: 0 })
+            ({ name: "DP-2", base: 1 }),
+            ({ name: "HDMI-A-2", base: 6 }),
+            ({ name: "eDP-1", base: 1 })
           ]
           property int defaultBase: 1
         }
@@ -280,6 +280,7 @@ Singleton {
       property JsonObject fonts: JsonObject {
         property int basePointSize: 16
         property bool useNativeRendering: false
+        property string family: "GeistMono Nerd Font"
       }
       property JsonObject osd: JsonObject {
         property int timeoutDuration: 700

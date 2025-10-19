@@ -35,7 +35,7 @@ PanelWindow {
   visible: root.show
 
   function stringToModule(str) {
-    let t = str.trim();
+    let t = str.trim().toLowerCase();
 
     if (t == "workspaces")
       return workspaces;
@@ -47,6 +47,8 @@ PanelWindow {
       return showBattery ? battery : null;
     if (t == "clock")
       return clock;
+    if (t == "idle" || t == "idle_inhibitor")
+      return idleToggle;
     if (t == "title")
       return barWindowTitle;
     if (t == "keyboard")
@@ -110,8 +112,8 @@ PanelWindow {
 
     radius: root.uncompactState * root.barRadius
     color: C.Config.applyBaseOpacity(C.Config.theme.background)
-    border.width: C.Config.settings.panels.borders ? root.uncompactState * root.borderMargin : 0
-    border.color: C.Config.applyBaseOpacity(C.Config.theme.outline_variant)
+    border.width: 0
+    border.color: "transparent"
 
     anchors {
       fill: parent
@@ -119,6 +121,15 @@ PanelWindow {
       rightMargin: root.uncompactState * root.gapsHorz
       topMargin: root.topContentMargin - root.borderMargin
       bottomMargin: root.bottomContentMargin - root.borderMargin
+    }
+
+    Rectangle {
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.bottom: parent.bottom
+      height: C.Config.settings.panels.borders ? Math.max(1, root.uncompactState * root.borderMargin) : 0
+      color: C.Config.applyBaseOpacity(C.Config.theme.outline_variant)
+      visible: height > 0
     }
 
     RowLayout {
@@ -283,6 +294,14 @@ PanelWindow {
 
     Clock {
       id: clock
+    }
+
+    IdleInhibitorToggle {
+      id: idleToggle
+      topInset: root.borderMargin
+      bottomInset: root.borderMargin
+      Layout.leftMargin: 2
+      Layout.rightMargin: 2
     }
 
     KeyboardLayout {

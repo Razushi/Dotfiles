@@ -17,12 +17,19 @@ Singleton {
   property string networkU
   property string temp
   property string osString
+  property bool idleInhibitEnabled: false
 
   function setHypridleStatus(enable) {
+    idleInhibitEnabled = !enable;
+
     if (enable)
       Quickshell.execDetached(["hypridle"])
     else
       Quickshell.execDetached(["bash", "-c", "killall -9 hypridle"]);
+  }
+
+  function toggleIdleInhibit() {
+    setHypridleStatus(idleInhibitEnabled);
   }
 
   function netSpeedToInt(input) {
