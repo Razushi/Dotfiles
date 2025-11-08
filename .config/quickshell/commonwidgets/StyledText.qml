@@ -8,7 +8,6 @@ Text {
   font {
     hintingPreference: Font.PreferFullHinting
     pointSize: C.Config.fontSize.normal
-    family: C.Config.settings.fonts.family
   }
   color: C.Config.theme.on_surface
   linkColor: C.Config.theme.primary_fixed

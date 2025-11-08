@@ -18,7 +18,6 @@ Scope {
   property bool showBars: true
 
   Component.onCompleted: {
-    Qt.application.font.family = C.Config.settings.fonts.family
     SystemTray; // register a status notifier host as early as possible
     console.log("Shell initialized");
     S.BrightnessState.load();

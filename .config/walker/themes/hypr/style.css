@@ -1,7 +1,4 @@
-@define-color foreground #e1e2e9;
-@define-color background #111318aa;
-@define-color color1 #a5c9feee;
-@define-color border #a5c9feee;
+@import 'matugen.css';
 
 scrollbar {
   opacity: 0;
