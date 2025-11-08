@@ -32,7 +32,7 @@ return
                         -- padding = 1
                     },
                     {
-                        text = { '"We love Nix."', hl = "SnacksDashboardKey" }
+                        text = { '"We die in the dark, so that you may live in the light."', hl = "SnacksDashboardKey" }
                     },
                 },
             }
