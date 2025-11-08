@@ -1,0 +1,7 @@
+/*
+!/.gitignore
+!/.gitconfig
+
+!/.ssh/
+!/.ssh/config
+/.ssh/id_*
