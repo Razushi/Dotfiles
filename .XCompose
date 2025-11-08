@@ -1,0 +1,5 @@
+include "%H/.local/share/omarchy/default/xcompose"
+
+# Identification
+<Multi_key> <space> <n> : "Razushi"
+<Multi_key> <space> <e> : "razushi.scve@proton.me"
