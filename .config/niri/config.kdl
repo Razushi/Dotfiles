@@ -69,6 +69,7 @@ output "DP-2" {
     scale 1
     transform "normal"
     position x=0 y=0
+    focus-at-startup
 }
 
 output "HDMI-A-2" {
@@ -87,10 +88,17 @@ output "eDP-1" {
     position x=0 y=0
 }
 
-workspace "1"
-workspace "2"
-workspace "3"
-workspace "4"
+// Persistent stack for DP-2 (main monitor)
+workspace "dp-main-1" { open-on-output "DP-2"; }
+workspace "dp-main-2" { open-on-output "DP-2"; }
+workspace "dp-main-3" { open-on-output "DP-2"; }
+workspace "dp-main-4" { open-on-output "DP-2"; }
+
+// Persistent stack for HDMI-A-2 (secondary monitor)
+workspace "hdmi-side-1" { open-on-output "HDMI-A-2"; }
+workspace "hdmi-side-2" { open-on-output "HDMI-A-2"; }
+workspace "hdmi-side-3" { open-on-output "HDMI-A-2"; }
+workspace "hdmi-side-4" { open-on-output "HDMI-A-2"; }
 
 environment {
     // DISPLAY ":1"
@@ -403,29 +411,26 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
+
     Mod+Shift+Page_Down { move-column-to-workspace-down; }
     Mod+Shift+Page_Up   { move-column-to-workspace-up; }
-    Mod+Shift+U         { move-column-to-workspace-down; }
-    Mod+Shift+I         { move-column-to-workspace-up; }
 
-    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
-    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
-    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    // Scroll vertically with Mod to walk columns; add Ctrl to move them.
+    Mod+WheelScrollDown      { focus-column-right; }
+    Mod+WheelScrollUp        { focus-column-left; }
+    Mod+Ctrl+WheelScrollDown { move-column-right; }
+    Mod+Ctrl+WheelScrollUp   { move-column-left; }
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+Ctrl+WheelScrollLeft  { move-column-left; }
 
-    // Usually scrolling up and down with Shift in applications results in
-    // horizontal scrolling; these binds replicate that.
-    Mod+Shift+WheelScrollDown      { focus-column-right; }
-    Mod+Shift+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    // Hold Shift to operate on workspaces instead; Ctrl moves the focused column.
+    Mod+Shift+WheelScrollDown      { focus-workspace-down; }
+    Mod+Shift+WheelScrollUp        { focus-workspace-up; }
+    Mod+Ctrl+Shift+WheelScrollDown { move-column-to-workspace-down; }
+    Mod+Ctrl+Shift+WheelScrollUp   { move-column-to-workspace-up; }
 
     // Similarly, you can bind touchpad scroll "ticks".
     // Touchpad scrolling is continuous, so for these binds it is split into
