@@ -315,13 +315,6 @@ window-rule {
   draw-border-with-background false
 }
 
-window-rule {
-    match app-id="Xdg-desktop-portal-gtk"
-    open-floating true
-    draw-border-with-background false
-}
-
-
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
