@@ -105,8 +105,18 @@
       "enabled": true
     },
     {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
+    },
+    {
       "id": "workspaceSwitcher",
       "enabled": true
+    },
+    {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
     },
     {
       "id": "music",
@@ -125,20 +135,45 @@
       "enabled": true
     },
     {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
+    },
+    {
       "id": "notificationButton",
       "enabled": true
+    },
+    {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
     },
     {
       "id": "battery",
       "enabled": true
     },
     {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
+    },
+    {
       "id": "controlCenterButton",
       "enabled": true
     },
     {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
+    },
+    {
       "id": "clock",
       "enabled": true
+    },
+    {
+      "id": "spacer",
+      "enabled": true,
+      "size": 20
     },
     {
       "id": "idleInhibitor",

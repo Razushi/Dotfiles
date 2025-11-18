@@ -223,7 +223,6 @@ spawn-at-startup "hypridle"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "swww" "img" "/home/razushi/Pictures/Theming/Wallpaper/omer-tunc-1-4.jpg"
 // spawn-at-startup "mako"
-spawn-at-startup "elephant"
 spawn-at-startup "vicinae" "server"
 spawn-at-startup "dms" "run"
 // spawn-at-startup "waybar"
@@ -240,7 +239,7 @@ prefer-no-csd
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/60-6Z Images/64 Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null
@@ -316,6 +315,13 @@ window-rule {
   draw-border-with-background false
 }
 
+window-rule {
+    match app-id="Xdg-desktop-portal-gtk"
+    open-floating true
+    draw-border-with-background false
+}
+
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -351,7 +357,6 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Schizo binds
-    Mod+D { spawn "walker"; }
     Mod+Q { spawn "ghostty"; }
     Mod+R { spawn "vicinae" "vicinae://toggle"; }
     Mod+E { spawn "dolphin"; }
