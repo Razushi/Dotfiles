@@ -1,0 +1,7 @@
+module qs..
+singleton GlobalStates 1.0 GlobalStates.qml
+ReloadPopup 1.0 ReloadPopup.qml
+killDialog 1.0 killDialog.qml
+settings 1.0 settings.qml
+shell 1.0 shell.qml
+welcome 1.0 welcome.qml
