@@ -69,6 +69,7 @@ output "DP-2" {
     scale 1
     transform "normal"
     position x=0 y=0
+    variable-refresh-rate on-demand=true
     focus-at-startup
 }
 
@@ -78,6 +79,7 @@ output "HDMI-A-2" {
     transform "normal"
     // Logically *below* DP-2, even though it's physically right
     position x=0 y=1440
+    variable-refresh-rate on-demand=true
 }
 // Laptop panel profile. Safe to leave enabled: it only applies
 // when the connector exists on the current machine.
@@ -86,6 +88,7 @@ output "eDP-1" {
     scale 1.25
     transform "normal"
     position x=0 y=0
+    variable-refresh-rate on-demand=true
 }
 
 // Persistent stack for DP-2 (main monitor)
@@ -102,7 +105,7 @@ workspace "hdmi-side-4" { open-on-output "HDMI-A-2"; }
 
 environment {
     // DISPLAY ":1"
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORMTHEME "qtengine"
 }
 
 cursor {
@@ -211,6 +214,7 @@ layout {
         length total-proportion=1.0
         position "top"
         place-within-column
+        inactive-color "#242424"
     }
 
 }
@@ -220,9 +224,8 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 spawn-at-startup "hypridle"
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swww" "img" "/home/razushi/Pictures/Theming/Wallpaper/omer-tunc-1-4.jpg"
-// spawn-at-startup "mako"
+// spawn-at-startup "swww-daemon"
+// spawn-at-startup "swww" "img" "/home/razushi/Pictures/Theming/Wallpaper/omer-tunc-1-4.jpg"
 spawn-at-startup "vicinae" "server"
 spawn-at-startup "dms" "run"
 // spawn-at-startup "waybar"
@@ -330,7 +333,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 3
+    geometry-corner-radius 10
     clip-to-geometry true
 }
 
@@ -350,7 +353,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Schizo binds
-    Mod+Q { spawn "ghostty"; }
+    Mod+Q { spawn "ghostty" "+new-window"; }
     Mod+R { spawn "vicinae" "vicinae://toggle"; }
     Mod+E { spawn "dolphin"; }
     Mod+Alt+L { spawn "hyprlock"; }

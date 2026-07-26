@@ -2,13 +2,38 @@
 command = "harper-ls"
 args = ["--stdio"]
 
+[language-server.harper-ls.config.harper-ls]
+diagnosticSeverity = "warning"
+
 [[language]]
 name = "markdown"
 scope = "source.md"
 file-types = ["md", "markdown"]
 soft-wrap = { enable = true }
-language-servers = ["markdown-oxide", "harper-ls"]
+language-servers = ["marksman", "harper-ls"]
 
 [[language]]
 name = "python"
 language-servers = [ "basedpyright" ]
+
+[[language]]
+name = "qml"
+scope = "source.qml"
+file-types = ["qml"]
+language-servers = [ "qmlls" ]
+formatter = { command = "qmlformat", args = ["-w", "2", "%{buffer_name}"] }
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 2, unit = " " }
+grammar = "qmljs"
+
+[language-server.jdtls]
+command = "jdtls"
+args = ["-data", "~/.cache/jdtls/workspace"]
+
+[[language]]
+name = "java"
+scope = "source.java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle", ".git"]
+language-servers = ["jdtls"]  
