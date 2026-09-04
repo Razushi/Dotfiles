@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""Capture the live compositor state as a ws_rehome test fixture.
+
+    capture-fixture undocked-stranded "note describing what this state is"
+"""
+
+import json
+import subprocess
+import sys
+from datetime import date
+from pathlib import Path
+
+FIELDS = ("monitors", "workspacerules", "workspaces", "clients")
+
+
+def hyprctl(what: str):
+    out = subprocess.run(
+        ["hyprctl", "-j", *what.split()], capture_output=True, text=True, check=True
+    )
+    return json.loads(out.stdout)
+
+
+def main() -> int:
+    if len(sys.argv) != 3:
+        print(__doc__.strip(), file=sys.stderr)
+        return 2
+    name, note = sys.argv[1], sys.argv[2]
+
+    path = Path(__file__).parent / "fixtures" / f"{name}.json"
+    if path.exists():
+        print(f"{path} exists; delete it first if you mean to replace it", file=sys.stderr)
+        return 1
+
+    capture = {"_note": f"Real capture, Solaris, {date.today()}: {note}"}
+    capture.update({f: hyprctl(f) for f in FIELDS})
+    path.write_text(json.dumps(capture, indent=2) + "\n")
+
+    live = [m["name"] for m in capture["monitors"]]
+    windows = sum(w["windows"] for w in capture["workspaces"])
+    print(f"wrote {path}")
+    print(f"  monitors: {', '.join(live)}")
+    print(f"  workspaces: {len(capture['workspaces'])} holding {windows} windows")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

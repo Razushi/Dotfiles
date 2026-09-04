@@ -1,0 +1,1531 @@
+{
+  "_note": "Real capture, Solaris, 2026-08-31: docked, laptop panel absent, both external blocks full (1-10 and 11-17) and nothing homeless. The 'nothing to rehome' case on a realistic amount of state.",
+  "monitors": [
+    {
+      "id": 1,
+      "name": "DP-7",
+      "description": "ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "make": "ViewSonic Corporation",
+      "model": "VX3218C-QHD",
+      "serial": "X1J234600746",
+      "width": 2560,
+      "height": 1440,
+      "physicalWidth": 700,
+      "physicalHeight": 390,
+      "refreshRate": 143.99699,
+      "x": 0,
+      "y": 0,
+      "activeWorkspace": {
+        "id": 2,
+        "name": "2"
+      },
+      "specialWorkspace": {
+        "id": 0,
+        "name": ""
+      },
+      "reserved": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "transform": 0,
+      "focused": false,
+      "dpmsStatus": true,
+      "vrr": false,
+      "solitary": "0",
+      "solitaryBlockedBy": [
+        "WINDOWED",
+        "CANDIDATE"
+      ],
+      "activelyTearing": false,
+      "tearingBlockedBy": [
+        "NOT_TORN",
+        "USER",
+        "CANDIDATE"
+      ],
+      "directScanoutTo": "0",
+      "directScanoutBlockedBy": [
+        "USER",
+        "MIRROR",
+        "SW",
+        "CANDIDATE"
+      ],
+      "disabled": false,
+      "currentFormat": "XRGB8888",
+      "mirrorOf": "none",
+      "availableModes": [
+        "2560x1440@59.95Hz",
+        "3840x2160@60.00Hz",
+        "3840x2160@59.94Hz",
+        "3840x2160@50.00Hz",
+        "2560x1440@144.00Hz",
+        "2560x1440@120.00Hz",
+        "1920x1080@120.00Hz",
+        "1920x1080@119.88Hz",
+        "1920x1080@100.00Hz",
+        "1920x1080@60.00Hz",
+        "1920x1080@60.00Hz",
+        "1920x1080@59.94Hz",
+        "1920x1080@50.00Hz",
+        "1600x1200@60.00Hz",
+        "1680x1050@59.88Hz",
+        "1400x1050@59.95Hz",
+        "1600x900@60.00Hz",
+        "1280x1024@75.03Hz",
+        "1280x1024@60.02Hz",
+        "1440x900@59.90Hz",
+        "1280x960@60.00Hz",
+        "1152x864@75.00Hz",
+        "1280x720@120.00Hz",
+        "1280x720@119.88Hz",
+        "1280x720@100.00Hz",
+        "1280x720@60.00Hz",
+        "1280x720@59.94Hz",
+        "1280x720@50.00Hz",
+        "1440x576@50.00Hz",
+        "1440x576@50.00Hz",
+        "1024x768@75.03Hz",
+        "1024x768@70.07Hz",
+        "1024x768@60.00Hz",
+        "832x624@74.55Hz",
+        "800x600@75.00Hz",
+        "800x600@72.19Hz",
+        "800x600@60.32Hz",
+        "800x600@56.25Hz",
+        "720x576@50.00Hz",
+        "720x576@50.00Hz",
+        "720x480@60.00Hz",
+        "720x480@60.00Hz",
+        "720x480@59.94Hz",
+        "720x480@59.94Hz",
+        "640x480@75.00Hz",
+        "640x480@72.81Hz",
+        "640x480@66.67Hz",
+        "640x480@60.00Hz",
+        "640x480@59.94Hz",
+        "640x480@59.94Hz",
+        "720x400@70.08Hz"
+      ],
+      "colorManagementPreset": "srgb",
+      "sdrBrightness": 1.0,
+      "sdrSaturation": 1.0,
+      "sdrMinLuminance": 0.2,
+      "sdrMaxLuminance": 80,
+      "hardwareCursorsInUse": true
+    },
+    {
+      "id": 2,
+      "name": "DP-8",
+      "description": "Microstep MSI G273 CA7A471A00224",
+      "make": "Microstep",
+      "model": "MSI G273",
+      "serial": "CA7A471A00224",
+      "width": 1920,
+      "height": 1080,
+      "physicalWidth": 590,
+      "physicalHeight": 330,
+      "refreshRate": 143.85201,
+      "x": 2560,
+      "y": 360,
+      "activeWorkspace": {
+        "id": 18,
+        "name": "8"
+      },
+      "specialWorkspace": {
+        "id": -98,
+        "name": "special:magic"
+      },
+      "reserved": [
+        0,
+        40,
+        0,
+        0
+      ],
+      "scale": 1.0,
+      "transform": 0,
+      "focused": true,
+      "dpmsStatus": true,
+      "vrr": false,
+      "solitary": "0",
+      "solitaryBlockedBy": [
+        "WINDOWED",
+        "SPECIAL",
+        "CANDIDATE"
+      ],
+      "activelyTearing": false,
+      "tearingBlockedBy": [
+        "NOT_TORN",
+        "USER",
+        "CANDIDATE",
+        "HW_CURSOR"
+      ],
+      "directScanoutTo": "0",
+      "directScanoutBlockedBy": [
+        "USER",
+        "CANDIDATE"
+      ],
+      "disabled": false,
+      "currentFormat": "XRGB8888",
+      "mirrorOf": "none",
+      "availableModes": [
+        "1920x1080@60.00Hz",
+        "1920x1080@143.85Hz",
+        "1920x1080@120.00Hz",
+        "1920x1080@119.88Hz",
+        "1920x1080@100.00Hz",
+        "1920x1080@84.62Hz",
+        "1920x1080@60.00Hz",
+        "1920x1080@59.94Hz",
+        "1920x1080@50.00Hz",
+        "1680x1050@59.88Hz",
+        "1280x1024@75.03Hz",
+        "1280x1024@60.02Hz",
+        "1440x900@59.90Hz",
+        "1280x720@60.00Hz",
+        "1280x720@59.94Hz",
+        "1280x720@50.00Hz",
+        "1024x768@75.03Hz",
+        "1024x768@70.07Hz",
+        "1024x768@60.00Hz",
+        "800x600@75.00Hz",
+        "800x600@72.19Hz",
+        "800x600@60.32Hz",
+        "800x600@56.25Hz",
+        "720x576@50.00Hz",
+        "720x576@50.00Hz",
+        "720x480@60.00Hz",
+        "720x480@60.00Hz",
+        "720x480@59.94Hz",
+        "720x480@59.94Hz",
+        "640x480@75.00Hz",
+        "640x480@72.81Hz",
+        "640x480@66.67Hz",
+        "640x480@60.00Hz",
+        "640x480@59.94Hz",
+        "640x480@59.94Hz"
+      ],
+      "colorManagementPreset": "srgb",
+      "sdrBrightness": 1.0,
+      "sdrSaturation": 1.0,
+      "sdrMinLuminance": 0.2,
+      "sdrMaxLuminance": 80,
+      "hardwareCursorsInUse": true
+    }
+  ],
+  "workspacerules": [
+    {
+      "workspaceString": "1",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "persistent": true,
+      "defaultName": "1"
+    },
+    {
+      "workspaceString": "2",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "persistent": true,
+      "defaultName": "2"
+    },
+    {
+      "workspaceString": "3",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "persistent": true,
+      "defaultName": "3"
+    },
+    {
+      "workspaceString": "4",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "persistent": true,
+      "defaultName": "4"
+    },
+    {
+      "workspaceString": "5",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "persistent": true,
+      "defaultName": "5"
+    },
+    {
+      "workspaceString": "6",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "defaultName": "6"
+    },
+    {
+      "workspaceString": "7",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "defaultName": "7"
+    },
+    {
+      "workspaceString": "8",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "defaultName": "8"
+    },
+    {
+      "workspaceString": "9",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "defaultName": "9"
+    },
+    {
+      "workspaceString": "10",
+      "monitor": "desc:ViewSonic Corporation VX3218C-QHD X1J234600746",
+      "defaultName": "0"
+    },
+    {
+      "workspaceString": "11",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "persistent": true,
+      "defaultName": "1"
+    },
+    {
+      "workspaceString": "12",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "persistent": true,
+      "defaultName": "2"
+    },
+    {
+      "workspaceString": "13",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "persistent": true,
+      "defaultName": "3"
+    },
+    {
+      "workspaceString": "14",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "persistent": true,
+      "defaultName": "4"
+    },
+    {
+      "workspaceString": "15",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "persistent": true,
+      "defaultName": "5"
+    },
+    {
+      "workspaceString": "16",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "defaultName": "6"
+    },
+    {
+      "workspaceString": "17",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "defaultName": "7"
+    },
+    {
+      "workspaceString": "18",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "defaultName": "8"
+    },
+    {
+      "workspaceString": "19",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "defaultName": "9"
+    },
+    {
+      "workspaceString": "20",
+      "monitor": "desc:Microstep MSI G273 CA7A471A00224",
+      "defaultName": "0"
+    },
+    {
+      "workspaceString": "21",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "1"
+    },
+    {
+      "workspaceString": "22",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "2"
+    },
+    {
+      "workspaceString": "23",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "3"
+    },
+    {
+      "workspaceString": "24",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "4"
+    },
+    {
+      "workspaceString": "25",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "5"
+    },
+    {
+      "workspaceString": "26",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "6"
+    },
+    {
+      "workspaceString": "27",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "7"
+    },
+    {
+      "workspaceString": "28",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "8"
+    },
+    {
+      "workspaceString": "29",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "9"
+    },
+    {
+      "workspaceString": "30",
+      "monitor": "desc:Lenovo Group Limited 0x403D",
+      "defaultName": "0"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": -98,
+      "name": "special:magic",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 3,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af0a452020",
+      "lastwindowtitle": "/home/razushi/.confi ~/.c/h/scripts",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 1,
+      "name": "1",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": true,
+      "lastwindow": "0x59af09bcdb20",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 2,
+      "name": "2",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09bb4dc0",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 3,
+      "name": "3",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af0926de10",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 4,
+      "name": "4",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c27f40",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 5,
+      "name": "5",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c39e00",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 11,
+      "name": "1",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": true,
+      "lastwindow": "0x59af09afe840",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 12,
+      "name": "2",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c32920",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 13,
+      "name": "3",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c54c30",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 14,
+      "name": "4",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c5b930",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 15,
+      "name": "5",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09c49570",
+      "lastwindowtitle": "~",
+      "ispersistent": true,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 6,
+      "name": "6",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09e85dc0",
+      "lastwindowtitle": "~",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 7,
+      "name": "7",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09e86d80",
+      "lastwindowtitle": "~",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 8,
+      "name": "8",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09d12d40",
+      "lastwindowtitle": "~",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 16,
+      "name": "6",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09a198c0",
+      "lastwindowtitle": "~",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 17,
+      "name": "7",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x59af09e60460",
+      "lastwindowtitle": "~",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 9,
+      "name": "9",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 1,
+      "hasfullscreen": false,
+      "lastwindow": "0x0",
+      "lastwindowtitle": "",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 10,
+      "name": "0",
+      "monitor": "DP-7",
+      "monitorID": 1,
+      "windows": 4,
+      "hasfullscreen": false,
+      "lastwindow": "0x0",
+      "lastwindowtitle": "",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    },
+    {
+      "id": 18,
+      "name": "8",
+      "monitor": "DP-8",
+      "monitorID": 2,
+      "windows": 0,
+      "hasfullscreen": false,
+      "lastwindow": "0x0",
+      "lastwindowtitle": "",
+      "ispersistent": false,
+      "tiledLayout": "dwindle"
+    }
+  ],
+  "clients": [
+    {
+      "address": "0x59af093d7380",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 9,
+        "name": "9"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "cizhi watch ~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 18,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000006"
+    },
+    {
+      "address": "0x59af09b85540",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        1285,
+        49
+      ],
+      "size": [
+        1266,
+        686
+      ],
+      "workspace": {
+        "id": 10,
+        "name": "0"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 21,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000009"
+    },
+    {
+      "address": "0x59af09361940",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        1285,
+        745
+      ],
+      "size": [
+        626,
+        686
+      ],
+      "workspace": {
+        "id": 10,
+        "name": "0"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 20,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800000a"
+    },
+    {
+      "address": "0x59af09bcdb20",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 1,
+        "name": "1"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 1,
+      "fullscreenClient": 1,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 17,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800000c"
+    },
+    {
+      "address": "0x59af09bb4dc0",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 2,
+        "name": "2"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 3,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800000d"
+    },
+    {
+      "address": "0x59af0926de10",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 3,
+        "name": "3"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 9,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800000e"
+    },
+    {
+      "address": "0x59af09c27f40",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 4,
+        "name": "4"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 8,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800000f"
+    },
+    {
+      "address": "0x59af09c39e00",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 5,
+        "name": "5"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 7,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000010"
+    },
+    {
+      "address": "0x59af09afe840",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 11,
+        "name": "1"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 1,
+      "fullscreenClient": 1,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 16,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000011"
+    },
+    {
+      "address": "0x59af09c32920",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 12,
+        "name": "2"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 14,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000012"
+    },
+    {
+      "address": "0x59af09c54c30",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 13,
+        "name": "3"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 15,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000013"
+    },
+    {
+      "address": "0x59af09c5b930",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 14,
+        "name": "4"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 13,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000014"
+    },
+    {
+      "address": "0x59af09c49570",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 15,
+        "name": "5"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 12,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000015"
+    },
+    {
+      "address": "0x59af0903ef40",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        1266,
+        1382
+      ],
+      "workspace": {
+        "id": 10,
+        "name": "0"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "md.Obsidian",
+      "title": "2026-08-31 - Apotheosis - Obsidian 1.13.7",
+      "initialClass": "md.Obsidian",
+      "initialTitle": "Obsidian",
+      "pid": 23195,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": true,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 19,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000017"
+    },
+    {
+      "address": "0x59af09cee200",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        1921,
+        745
+      ],
+      "size": [
+        630,
+        686
+      ],
+      "workspace": {
+        "id": 10,
+        "name": "0"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "crashreporter",
+      "title": "Firefox Crash Reporter",
+      "initialClass": "crashreporter",
+      "initialTitle": "Firefox Crash Reporter",
+      "pid": 39526,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 22,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800001e"
+    },
+    {
+      "address": "0x59af09cb2b00",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        3525,
+        925
+      ],
+      "size": [
+        946,
+        506
+      ],
+      "workspace": {
+        "id": -98,
+        "name": "special:magic"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "cizhi watch ~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": true,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 1,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800001a"
+    },
+    {
+      "address": "0x59af09e85dc0",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 6,
+        "name": "6"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 6,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800001f"
+    },
+    {
+      "address": "0x59af09e86d80",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 7,
+        "name": "7"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 5,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000020"
+    },
+    {
+      "address": "0x59af09d12d40",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        9,
+        49
+      ],
+      "size": [
+        2542,
+        1382
+      ],
+      "workspace": {
+        "id": 8,
+        "name": "8"
+      },
+      "floating": false,
+      "monitor": 1,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 4,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000021"
+    },
+    {
+      "address": "0x59af09a198c0",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 16,
+        "name": "6"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 11,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000022"
+    },
+    {
+      "address": "0x59af09e60460",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        1902,
+        1022
+      ],
+      "workspace": {
+        "id": 17,
+        "name": "7"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "~",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": false,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 10,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000023"
+    },
+    {
+      "address": "0x59af090a15e0",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        2569,
+        409
+      ],
+      "size": [
+        946,
+        1022
+      ],
+      "workspace": {
+        "id": -98,
+        "name": "special:magic"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "\u2733 local command caveat",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": true,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 2,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "18000002"
+    },
+    {
+      "address": "0x59af0a452020",
+      "mapped": true,
+      "hidden": false,
+      "visible": true,
+      "acceptsInput": true,
+      "at": [
+        3525,
+        409
+      ],
+      "size": [
+        946,
+        506
+      ],
+      "workspace": {
+        "id": -98,
+        "name": "special:magic"
+      },
+      "floating": false,
+      "monitor": 2,
+      "class": "com.mitchellh.ghostty",
+      "title": "/home/razushi/.confi ~/.c/h/scripts",
+      "initialClass": "com.mitchellh.ghostty",
+      "initialTitle": "Ghostty",
+      "pid": 2810,
+      "xwayland": false,
+      "pinned": false,
+      "fullscreen": 0,
+      "fullscreenClient": 0,
+      "overFullscreen": true,
+      "grouped": [],
+      "tags": [],
+      "swallowing": "0x0",
+      "focusHistoryID": 0,
+      "inhibitingIdle": false,
+      "xdgTag": "",
+      "xdgDescription": "",
+      "contentType": "none",
+      "stableId": "1800001c"
+    }
+  ]
+}

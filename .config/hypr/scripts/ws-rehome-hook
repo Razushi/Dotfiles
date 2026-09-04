@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+# Called from hyprland's monitor.removed hook (config/dock.lua).
+# Undocking fires one event per monitor, so `flock -n` debounces the burst and
+# the sleep lets hyprland finish tearing the outputs down first.
+set -eu
+
+reason=${1:-monitor-change}
+notify-send -a ws-rehome "Monitor set changed" "$reason - rehoming stranded workspaces" 2>/dev/null || true
+
+exec flock -n /tmp/ws-rehome.lock sh -c \
+  'sleep 2; exec "$HOME/.config/hypr/scripts/ws-rehome"'
